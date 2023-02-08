@@ -29,22 +29,6 @@ addEventOnElements(navTogglers, "click", toggleNavbar);
  * add active class on header when window scroll down to 100px
  */
 
-const header = document.querySelector("[data-header]");
-
-const headerActive = function () {
-    if (window.scrollY > 100) {
-        header.classList.add("active");
-    } else {
-        header.classList.remove("active");
-    }
-}
-
-window.addEventListener("scroll", headerActive);
-
-// let inner__cursor = document.querySelector(".inner__cursor");
-let outer__cursor = document.querySelector(".outer__cursor");
-let outer__cursor2 = document.querySelector(".outer__cursor2");
-
 document.onmousemove = function (e) {
 
     // inner__cursor.style.left = e.pageX - 5 + "px";
@@ -60,3 +44,41 @@ document.onmousemove = function (e) {
     outer__cursor.style.display = "block";
 
 }
+
+// hero image slide show
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("slides")[0].children;
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 1000); // Change image every 3 seconds
+}
+// reveal on scroll
+// var revealElements = document.querySelectorAll('.reveal');
+// var revealVisible = 'reveal-visible';
+// var revealThreshold = 0.1;
+
+// function revealCheck() {
+//     revealElements.forEach(function (element) {
+//         var rect = element.getBoundingClientRect();
+//         if (rect.top <= window.innerHeight * revealThreshold && rect.bottom >= 0) {
+//             element.classList.add(revealVisible);
+//         } else {
+//             element.classList.remove(revealVisible);
+//         }
+//     });
+// }
+
+// window.addEventListener('scroll', revealCheck);
+// revealCheck();
+
+// 
+
+
