@@ -10,24 +10,72 @@
 </head>
 
 <body>
-    <div>
-        <div class="hidden lg:block max-w-[10%] fixed top-[2.25rem] left-[5.2%]">
-            <img src="/assets/LOGO.webp" alt="">
+    <div class="lg:hidden">
+        <header class="nav-header font-avenir500 text-2xl  hidden lg:flex justify-between items-center m-auto"
+            data-header>
+            <div class="nav-container">
+                <a href="/index" class="cursor-pointer">
+                    <img class="max-w-[200px]" src="/assets/logo.png" alt="">
+                </a>
+                <nav class="navbar max-w-xs w-full bg-white h-screen py-10 z-[2] pl-[17%] " data-navbar>
+                    <div class="navbar-top">
+                        <a href="/index" class="logo">
+                            <img class="max-w-[100px]" src="/assets/LOGO.webp" alt="">
+                        </a>
+                        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+                            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                        </button>
+                    </div>
+                    <ul class="navbar-list pt-6">
+                        <li class="navbar-item">
+                            <a href="/index.html.html" class="navbar-link title-sm  font-bold text-accentRed"
+                                data-nav-link>HOME</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="/fasion-still-life.html"
+                                class="navbar-link title-sm  hover:text-accentRed active-link" data-nav-link>STILL
+                                LIFE & FASHION</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="/interior-events.html" class="navbar-link title-sm  hover:text-accentRed "
+                                data-nav-link>INTERIOR &
+                                EVENTS</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="/about.html" class="navbar-link title-sm  hover:text-accentRed"
+                                data-nav-link>ABOUT</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="/contact.html" class="navbar-link title-sm  hover:text-accentRed"
+                                data-nav-link>CONTACT</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="nav-open-btn pt-6 ml-auto" aria-label="open menu" data-nav-toggler>
+                    <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+                </button>
+                <div class="overlay" data-overlay data-nav-toggler></div>
+            </div>
+        </header>
+    </div>
+    <header>
+        <div class="hidden lg:block max-w-[13%] fixed top-[2.25rem] left-[3%]"><img src="/assets/LOGO.png" alt="">
         </div>
         <nav class="hidden lg:block">
             <ul
-                class="font-avenir500 lg:text-xl left-[5.5%] xl:text-4xl flex flex-col gap-10 justify-center items-center w-fit fixed top-[33%] xl:left-[4.8%]">
-                <li>HOME</li>
-                <li>STILL LIFE</li>
-                <li>FASHION</li>
-                <li>ABOUT</li>
-                <li>CONTACT</li>
+                class="font-avenir500 lg:text-xl left-[5.5%] xl:text-4xl flex flex-col gap-10 justify-center items-center w-fit fixed top-[36%] xl:left-[4.4%]">
+                <li class="hover:text-accentRed"><a href="/index.html">HOME</a></li>
+                <li class="text-accentRed text-center"><a href="/fasion-still-life.html">LIFE & <br> FASHION</a></li>
+                <li class="text-center hover:text-accentRed"><a href="/interior-events.html">INTERIOR <br> & EVENTS</a>
+                </li>
+                <li class="hover:text-accentRed"><a href="/about.html">ABOUT</a></li>
+                <li class="hover:text-accentRed"><a href="/contact.html">CONTACT</a></li>
             </ul>
         </nav>
-    </div>
+    </header>
     <div class="gradient-fasion">
         <div class="max-w-[97%] m-auto">
-            <div class="lg:max-w-[70%] m-auto lg:m-0 lg:ml-auto flex flex-col gap-10 pt-14">
+            <div class="lg:max-w-[78%] m-auto lg:m-0 lg:ml-auto flex flex-col gap-10 pt-14">
                 <h2 class="font-prisma text-4xl">Brau</h2>
                 <p class="font-avenir400 text-xl">My Styling for "Saint Laurent" advertorial on L'officiel Thailand
                     September 2020</p>
@@ -44,7 +92,7 @@
                         class="mr-6 h-full inline-block object-cover " loading="lazy">
                 </div>
             </div>
-            <div class="lg:max-w-[70%] m-auto lg:m-0 lg:ml-auto flex flex-col gap-10 pt-14">
+            <div class="lg:max-w-[78%] m-auto lg:m-0 lg:ml-auto flex flex-col gap-10 pt-14">
                 <h2 class="font-prisma text-4xl">LES BENJAMINS X COCA COLA</h2>
                 <p class="font-avenir400 text-xl">My Styling for "Saint Laurent" advertorial on L'officiel Thailand
                     September 2020</p>
@@ -77,7 +125,7 @@
                         class="mr-6 h-full inline-block object-cover " loading="lazy">
                 </div>
             </div>
-            <div class="lg:max-w-[70%] m-auto lg:m-0 lg:ml-auto flex flex-col gap-10 pt-14">
+            <div class="lg:max-w-[78%] m-auto lg:m-0 lg:ml-auto flex flex-col gap-10 pt-14">
                 <h2 class="font-prisma text-4xl">PIAGET</h2>
                 <p class="font-avenir400 text-xl">My Styling for "Saint Laurent" advertorial on L'officiel Thailand
                     September 2020</p>
@@ -122,7 +170,7 @@
 
                 </div>
             </div>
-            <div class="lg:max-w-[70%] m-auto lg:m-0 lg:ml-auto flex flex-col gap-10 pt-14">
+            <div class="lg:max-w-[78%] m-auto lg:m-0 lg:ml-auto flex flex-col gap-10 pt-14">
                 <h2 class="font-prisma text-4xl">MOTION CYCLING ABUDHABI</h2>
                 <p class="font-avenir400 text-xl">My Styling for "Saint Laurent" advertorial on L'officiel Thailand
                     September 2020</p>
