@@ -1,0 +1,364 @@
+@layer base {
+    @font-face {
+        font-family: "AVENIR400";
+        src: url('/fonts/AvenirLTStd-Book.otf') format('OpenType');
+    }
+
+    @font-face {
+        font-family: "AVENIR500";
+        src: url('/fonts/AvenirLTStd-Roman.otf') format('OpenType');
+    }
+
+    @font-face {
+        font-family: "AVENIR600";
+        src: url('/fonts/AvenirLTStd-Black.otf') format('OpenType');
+    }
+
+    @font-face {
+        font-family: "PRISMA";
+        src: url('/fonts/Prisma.ttf') format('TrueType');
+    }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gradient {
+    background-image: linear-gradient(to right, #10D94D 26%, pink 26%, pink 74%, #10D94D 74%, #10D94D)
+}
+
+.gradient-home {
+    background-image: linear-gradient(to right, #FFFFFF 73%, #F69AC1 73%, #F69AC1)
+}
+
+.gradient-about {
+    background-image: linear-gradient(to right, #F69AC1 73%, #E82223 73%, #E82223)
+}
+
+.gradient-fasion {
+    /* background-color: rgb(246 154 193); */
+    background-image: none;
+}
+
+@media (min-width: 1024px) {
+    .gradient-fasion {
+        background-image: linear-gradient(to right, #FFFFFF 19%, #F69AC1 19%, #F69AC1)
+    }
+}
+
+
+.fill {
+    width: -webkit-fill-available;
+}
+
+.char {
+    transition: color 3s 1s;
+}
+
+.char:hover,
+.char:active {
+    color: #f889b8;
+    transition: color 0s;
+}
+
+#style-3 {
+    scrollbar-width: thin;
+}
+
+#style-3::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+
+#style-3::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #E82223;
+}
+
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body.loaded {
+    overflow: visible;
+}
+
+body.nav-active {
+    overflow: hidden;
+}
+
+/*-----------------------------------*\
+  #REUSED STYLE
+\*-----------------------------------*/
+
+.nav-container {
+    /* background-color: #f5f5f5; */
+    padding-block: 0.5rem;
+    width: 95%;
+
+}
+
+.title-sm {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+@media (min-width: 720px) {
+
+    .title-sm {
+        font-size: 1.2rem;
+    }
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+/*-----------------------------------*\
+  #nav-header
+\*-----------------------------------*/
+
+.nav-header .btn {
+    display: none;
+}
+
+.nav-header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* background-color: #f5f5f5; */
+    /* box-shadow: 0 1px 6px 0 rgb(32 33 36 / 68%); */
+    z-index: 10;
+    margin-bottom: 20px;
+    /* position: fixed; */
+
+}
+
+
+
+button {
+    all: unset;
+}
+
+@keyframes nav-headerActive {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: auto;
+}
+
+
+.nav-header,
+.navbar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.nav-open-btn,
+.nav-close-btn {
+    font-size: 32px;
+}
+
+.nav-logo {
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-family: "Lora", serif;
+    font-weight: 400;
+}
+
+@media (min-width: 720px) {
+    .nav-logo {
+        font-size: 2rem;
+
+    }
+}
+
+.navbar {
+    top: 0;
+    left: -320px;
+    max-width: 320px;
+    width: 100%;
+    background-color: #FFFFFF;
+    height: 100vh;
+    padding: 40px 16px;
+    z-index: 2;
+    transition: 0.25s cubic-bezier(0.51, 0.03, 0.64, 0.28);
+    visibility: hidden;
+}
+
+@media (max-width: 1200px) {
+    .navbar {
+        position: fixed;
+    }
+}
+
+@media (min-width: 1200px) {
+    .navbar {
+        /* margin-right: 26%; */
+    }
+}
+
+.navbar.active {
+    transition: 0.5s cubic-bezier(0.51, 0.03, 0.64, 0.28);
+    visibility: visible;
+    transform: translateX(320px);
+}
+
+.navbar-top {
+    margin-block-end: 34px;
+}
+
+.nav-close-btn ion-icon {
+    --ionicon-stroke-width: 35px;
+}
+
+.navbar-item:not(:last-child) {
+    border-block-end: 1px solid hsla(0, 0%, 0%, 0.1);
+}
+
+.navbar-link {
+    padding-block: 8px;
+    transition: 0.25s ease;
+}
+
+.navbar-link:is(:hover, :focus-visible) {
+    color: hsl(224, 53%, 10%);
+}
+
+.active-link {
+
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    text-decoration-thickness: 2px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.25s ease;
+}
+
+.overlay.active {
+    opacity: 0.6;
+    visibility: visible;
+}
+
+
+
+@media (min-width: 575px) {
+    [class*="icon-"] {
+        padding: 1.5rem;
+        background-color: transparent;
+        background-size: 2rem;
+
+    }
+}
+
+
+
+
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+
+/**
+ * responsive for large than 575px screen
+ */
+
+@media (min-width: 575px) {
+
+    /**
+   * REUSED STYLE
+   */
+
+    .nav-container {
+        /* max-width: 640px; */
+        width: 95%;
+        /* margin-inline: auto; */
+
+    }
+
+
+
+    /**
+ * responsive for large than 992px screen
+ */
+
+    @media (min-width: 992px) {
+
+        /**
+   * nav-header
+   */
+
+        /* .nav-open-btn, */
+        .overlay,
+        .navbar-top {
+            display: none;
+        }
+
+        .navbar,
+        .navbar.active {
+            all: unset;
+            display: block;
+        }
+
+        .navbar-list {
+            display: flex;
+            gap: 8px;
+        }
+
+        .navbar-item:not(:last-child) {
+            border-block-end: none;
+        }
+
+        .navbar-link {
+            padding: 8px 16px;
+        }
+
+        .nav-header .btn {
+            display: block;
+            /* box-shadow: none; */
+        }
+
+    }
+
+    /* responsive for large than 1200px screen */
+
+
+    @media (min-width: 1200px) {
+
+        .nav-container {
+            /* justify-content: flex-start; */
+            max-width: 1920px;
+            width: 95%;
+            gap: 15rem;
+        }
+    }
+}
