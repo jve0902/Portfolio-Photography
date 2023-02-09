@@ -407,3 +407,28 @@ button {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* reverse border for card */
+/* .image::before {
+    box-shadow: 15px -10px 0 rgb(252, 231, 243);
+    background-color: rgb(246, 246, 246);
+    position: absolute;
+    border-radius: 50%;
+    height: 1.5rem;
+    width: 1.5rem;
+    left: -1.5rem;
+    top: 50%;
+    content: '';
+}
+
+.image::after {
+    box-shadow: -15px -10px 0 rgb(252, 231, 243);
+    background-color: rgb(246, 246, 246);
+    position: absolute;
+    border-radius: 50%;
+    height: 1.5rem;
+    width: 1.5rem;
+    right: -1.5rem;
+    top: 50%;
+    content: '';
+} */
