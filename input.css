@@ -397,7 +397,7 @@ button {
     animation: slideInFromLeft 1s ease-out;
 }
 
-.reveal {
+/* .reveal {
     opacity: 0;
     transform: translateY(20px);
     transition: all 0.5s ease-out;
@@ -406,7 +406,7 @@ button {
 .reveal.reveal-visible {
     opacity: 1;
     transform: translateY(0);
-}
+} */
 
 /* reverse border for card */
 /* .image::before {
