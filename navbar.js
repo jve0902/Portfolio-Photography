@@ -23,27 +23,6 @@ const toggleNavbar = function () {
 
 addEventOnElements(navTogglers, "click", toggleNavbar);
 
-/**
- * HEADER
- * 
- * add active class on header when window scroll down to 100px
- */
-
-document.onmousemove = function (e) {
-
-    // inner__cursor.style.left = e.pageX - 5 + "px";
-    // inner__cursor.style.top = e.pageY - 5 + "px";
-    // inner__cursor.style.display = "block";
-
-    outer__cursor2.style.left = e.pageX - 12 + "px";
-    outer__cursor2.style.top = e.pageY - 12 + "px";
-    outer__cursor2.style.display = "block";
-
-    outer__cursor.style.left = e.pageX - 22 + "px";
-    outer__cursor.style.top = e.pageY - 22 + "px";
-    outer__cursor.style.display = "block";
-
-}
 
 // hero image slide show
 var slideIndex = 0;
@@ -60,25 +39,84 @@ function showSlides() {
     slides[slideIndex - 1].style.display = "block";
     setTimeout(showSlides, 1000); // Change image every 3 seconds
 }
-// reveal on scroll
-// var revealElements = document.querySelectorAll('.reveal');
-// var revealVisible = 'reveal-visible';
-// var revealThreshold = 0.1;
 
-// function revealCheck() {
-//     revealElements.forEach(function (element) {
-//         var rect = element.getBoundingClientRect();
-//         if (rect.top <= window.innerHeight * revealThreshold && rect.bottom >= 0) {
-//             element.classList.add(revealVisible);
-//         } else {
-//             element.classList.remove(revealVisible);
-//         }
-//     });
-// }
+// cursor animation 
 
-// window.addEventListener('scroll', revealCheck);
-// revealCheck();
-
+let cursor = document.createElement("div");
+document.querySelector("body").prepend(cursor), (cursor.className = "cursor");
+var cursorAnim = {
+    delay: 5,
+    _x: 0,
+    _y: 0,
+    endX: window.innerWidth / 2,
+    endY: window.innerHeight / 2,
+    $cursor: document.querySelector(".cursor"),
+    init: function () {
+        (this.dotSize = this.$cursor.offsetWidth),
+            this.setupEventListeners(),
+            this.animateDotOutline();
+    },
+    setupEventListeners: function () {
+        var e = this;
+        document
+            .querySelectorAll("a:not(.blog-card), .hover_card")
+            .forEach(function (t) {
+                t.addEventListener("mouseover", function () {
+                    t.classList.contains("hover_card")
+                        ? (e.toggleCursorSize(!0, 1),
+                            e.$cursor.classList.add("blur"),
+                            (e.$cursor.textContent = t.classList.contains("contact-title")
+                                ? "Book a call"
+                                : "Explore"))
+                        : e.toggleCursorSize(!0);
+                }),
+                    t.addEventListener("mouseout", function () {
+                        e.toggleCursorSize(!1),
+                            e.$cursor.classList.remove("blur"),
+                            (e.$cursor.textContent = "");
+                    });
+            }),
+            document.addEventListener("mousemove", function (t) {
+                (e.endX = t.clientX), (e.endY = t.clientY);
+            }),
+            document.addEventListener("mouseenter", function (t) {
+                e.$cursor.style.opacity = 1;
+            }),
+            document.addEventListener("mouseleave", function (t) {
+                e.$cursor.style.opacity = 0;
+            });
+    },
+    animateDotOutline: function () {
+        var e = this;
+        (e._x += (e.endX - e._x) / e.delay),
+            (e._y += (e.endY - e._y) / e.delay),
+            (e.$cursor.style.translate = `${e._x}px ${e._y}px`),
+            requestAnimationFrame(this.animateDotOutline.bind(e));
+    },
+    toggleCursorSize: function (e, t) {
+        this.$cursor.style.transform = e
+            ? `translate(-50%, -50%) scale(${t || 0.25})`
+            : "translate(-50%, -50%) scale(0.1)";
+    }
+};
 // 
 
+// fade in fade out animation
+
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+
+        }
+        else {
+            entry.target.classList.remove('show');
+        }
+    });
+});
+
+const hiddenElements = document.querySelectorAll('.hiden');
+hiddenElements.forEach((el) => observer.observe(el));
 

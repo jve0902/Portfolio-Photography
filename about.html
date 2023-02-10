@@ -10,11 +10,13 @@
 </head>
 
 <body class="max-w-[1920px] m-auto font-avenir500 ">
+    <div class="cursor" style="translate: 1917px 248px; opacity: 0; transform: translate(-50%, -50%) scale(0.1);"></div>
+
     <header
         class="gradient-about nav-header font-avenir500 text-2xl  hidden lg:flex justify-between items-center m-auto"
         data-header>
         <div class="nav-container">
-            <a href="/index" class="cursor-pointer">
+            <a href="/index.html" class="cursor-pointer">
                 <img class="max-w-[200px]" src="/assets/logo.png" alt="">
             </a>
 
@@ -71,65 +73,10 @@
         </div>
     </header>
     <div class="bg-gradient-to-b gradient-about lg:-mt-[7.5rem]">
-        <!-- <header class="">
-            <div class="px-4 mx-auto sm:px-6 lg:px-8">
-                <div class="flex items-center justify-between h-16 lg:h-20">
-                    <div class="flex-shrink-0">
-                        <a href="#" title="" class="flex pt-24">
-                            <img class="w-auto h-36 " src="/assets/about/LOGO.png" alt="" />
-                        </a>
-                    </div>
-
-                    <button type="button"
-                        class="inline-flex p-1 text-black transition-all duration-200 border border-black lg:hidden focus:bg-gray-100 hover:bg-gray-100">
-                        <svg class="block w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-
-                        <svg class="hidden w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M6 18L18 6M6 6l12 12"></path>
-                        </svg>
-                    </button>
-
-                    <div class="hidden ml-auto lg:flex lg:items-center lg:justify-center lg:space-x-10">
-                        <a href="/Home.html" title=""
-                            class="text-base font-semibold text-black transition-all duration-200 hover:text-opacity-80">
-                            HOME </a>
-
-                        <a href="#" title=""
-                            class="text-base font-semibold text-black transition-all duration-200 hover:text-opacity-80">
-                            STILL LIFE </a>
-
-                        <a href="#" title=""
-                            class="text-base font-semibold text-black transition-all duration-200 hover:text-opacity-80">
-                            FASHION </a>
-
-                        <a href="#" title=""
-                            class="text-base font-semibold text-black transition-all duration-200 hover:text-opacity-80">
-                            EVENTS </a>
-
-                        <div class="w-px h-5 bg-black/20"></div>
-
-                        <a href="#" title=""
-                            class="text-base font-semibold text-black transition-all duration-200 hover:text-opacity-80">
-                            ABOUT </a>
-
-                        <a href="#" title=""
-                            class="inline-flex items-center justify-center px-5 py-2.5 text-base font-semibold text-black border-2 border-black hover:bg-black hover:text-white transition-all duration-200 focus:bg-black focus:text-white"
-                            role="button"> CONTACT </a>
-                    </div>
-                </div>
-            </div>
-        </header> -->
-
         <section class="py-10 sm:py-16 lg:py-24">
             <div class="px-4 mx-auto sm:px-6 lg:px-8">
-                <div class="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
-                    <div>
+                <div class=" grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
+                    <div class="animation">
                         <h1 class="text-4xl text-black sm:text-6xl lg:text-7xl font-prisma">
                             Hello!
                             I’m Kim
@@ -217,9 +164,9 @@
         <p class="text-lg xl:text-2xl underline">WORK WITH US</p>
     </div>
     <div>
-        <div class=" flex flex-col xl:flex-row  xl:justify-between">
+        <div class="bg-pink-50 flex flex-col xl:flex-row  xl:justify-between">
             <article
-                class="bg-pink-50 text-xl p-10 flex flex-col gap-5 xl:max-w-[50%] xl:px-[7%] xl:justify-center  xl:text-2xl">
+                class="hiden  text-xl p-10 flex flex-col gap-5 xl:max-w-[50%] xl:px-[7%] xl:justify-center  xl:text-2xl">
                 <p>In addition to photography, we have well-rounded backgrounds in advertising, graphic design, art
                     direction, and media which helps us to approach our projects with a unique perspective, while
                     tailoring the shoot to your needs and target audience.</p>
@@ -234,12 +181,12 @@
                 <img class=" w-full h-full object-cover" src="/assets/about/p2-1.png" alt="">
             </div>
         </div>
-        <div class=" flex flex-col-reverse xl:flex-row  xl:justify-between">
+        <div class="bg-pink-50 flex flex-col-reverse xl:flex-row  xl:justify-between">
             <div class="xl:max-w-[50%]">
                 <img class=" w-full h-full object-cover" src="/assets/about/pq.png" alt="">
             </div>
             <article
-                class="bg-pink-50 text-xl p-10 flex flex-col gap-5 xl:max-w-[50%] xl:px-[7%] xl:justify-center  xl:text-2xl">
+                class="fade-left text-xl p-10 flex flex-col gap-5 xl:max-w-[50%] xl:px-[7%] xl:justify-center  xl:text-2xl">
                 <p>While we’re based in California, we partner with brands from around the world, and in every
                     industry.
                     Whether you have a new pair of sunglasses to launch, packaging to unveil, or beverages to
@@ -275,7 +222,6 @@
     <script src="/navbar.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
 
 </html>
