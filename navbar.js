@@ -56,7 +56,6 @@ function changeImg() {
         // Reset Back To O
         i = 0;
     }
-
     // Run function every x seconds
     setTimeout("changeImg()", time);
 }
@@ -141,6 +140,8 @@ var cursorAnim = {
             : "translate(-50%, -50%) scale(0.1)";
     }
 };
+const mediaQuery = window.matchMedia("(min-width: 768px)");
+mediaQuery.matches && cursorAnim.init();
 
 
 

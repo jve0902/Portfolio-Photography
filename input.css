@@ -394,14 +394,9 @@ button {
 
 
 
-[disabled] {
-    cursor: default;
-}
-
-.title .char {
-    cursor: default;
-    transition: color 3s 1s;
-    vertical-align: text-top;
+.blog-card {
+    display: block;
+    width: 100%;
 }
 
 .cursor {
