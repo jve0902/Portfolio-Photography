@@ -10,9 +10,67 @@
 </head>
 
 <body>
+    <header class="bg-pink-100 nav-header font-avenir500 text-2xl  hidden lg:flex justify-between items-center m-auto"
+        data-header>
+        <div class="nav-container">
+            <a href="/index" class="cursor-pointer">
+                <img class="max-w-[200px]" src="/assets/logo.png" alt="">
+            </a>
+
+            <nav class="navbar max-w-xs w-full bg-white h-screen py-10 z-[2] pl-[17%] " data-navbar>
+
+                <div class="navbar-top">
+                    <a href="/index.html" class="logo">
+                        <img class="max-w-[100px]" src="/assets/LOGO.webp" alt="">
+                    </a>
+
+                    <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+                        <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                </div>
+
+                <ul class="navbar-list pt-6">
+                    <li class="navbar-item">
+                        <a href="/index.html" class="navbar-link title-sm font-bold hover:text-accentRed"
+                            data-nav-link>HOME</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="/fasion-still-life.html" class="navbar-link title-sm  hover:text-accentRed "
+                            data-nav-link>STILL
+                            LIFE & FASHION</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="/interior-events.html" class="navbar-link title-sm  hover:text-accentRed "
+                            data-nav-link>INTERIOR &
+                            EVENTS</a>
+                    </li>
+
+
+                    <li class="navbar-item">
+                        <a href="/about.html" class="navbar-link title-sm  hover:text-accentRed" data-nav-link>ABOUT</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="/contact.html" class="navbar-link title-sm  text-accentRed active-link"
+                            data-nav-link>CONTACT</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <button class="nav-open-btn pt-6 ml-auto" aria-label="open menu" data-nav-toggler>
+                <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+            </button>
+
+            <div class="overlay" data-overlay data-nav-toggler></div>
+
+        </div>
+    </header>
     <div class="bg-pink-100 ">
         <div class="font-avenir500 text-lg text-black max-w-[90%] m-auto">
-            <div class="lg:max-w-[35%] lg:fixed lg:top-10 lg:left-6 font-avenir400 text-sm lg:text-base ">
+            <div class="lg:max-w-[35%] lg:fixed lg:top-10 lg:left-6 font-avenir400 text-sm lg:text-base mt-[10%]">
                 <h1 class="font-prisma text-2xl pb-7">New Client Intake Form</h1>
                 <p class="pb-4">Thank you for your interest in working with us! Once we receive this form, we will
                     either reach out with additional information or to schedule a call to discuss your needs in more
@@ -32,19 +90,7 @@
                 <p class="pb-4">We look forward to partnering with you!</p>
             </div>
             <form>
-                <div class="lg:max-w-[50%] lg:ml-auto pt-12 pb-12 text-base lg:text-lg">
-                    <!-- <div class="flex flex-col sm:flex-row justify-between gap-4 flex-wrap">
-                        <div class="w-100% fill inline-block">
-                            <label class="pl-1" for="name_input">First Name</label>
-                            <input class="bg-white py-5 rounded-md fill my-4" type="text" name="name" id="name_input"
-                                required>
-                        </div>
-                        <div class="w-100% fill inline-block">
-                            <label class="pl-1" for="name_input">Last Name</label>
-                            <input class="bg-white py-5 rounded-md fill my-4" type="text" name="name" id="name_input"
-                                required>
-                        </div>
-                    </div> -->
+                <div class="lg:max-w-[50%] lg:ml-auto pt-12 pb-12 text-base lg:text-lg -mt-[8%]">
                     <div class="w-100% fill">
                         <label class="pl-1" for="name_input">First Name*</label>
                         <input class="bg-white py-5 rounded-md fill my-4" type="text" name="name" id="name_input"

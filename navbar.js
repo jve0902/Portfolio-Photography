@@ -39,10 +39,9 @@ images[5] = "/assets/projects/SQUARE/6.jpg";
 images[6] = "/assets/projects/SQUARE/7.jpg";
 images[7] = "/assets/projects/SQUARE/8.jpg";
 images[8] = "/assets/projects/SQUARE/9.jpg";
-images[9] = "/assets/projects/SQUARE/10.jpg";
-images[10] = "/assets/projects/SQUARE/11.jpg";
-images[11] = "/assets/projects/SQUARE/12.jpg";
-images[12] = "/assets/projects/SQUARE/13.jpg";
+images[9] = "/assets/projects/SQUARE/11.jpg";
+images[10] = "/assets/projects/SQUARE/12.jpg";
+images[11] = "/assets/projects/SQUARE/13.jpg";
 
 
 // Change Image
