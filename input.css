@@ -25,7 +25,7 @@
 @tailwind utilities;
 
 .gradient {
-    background-image: linear-gradient(to right, #10D94D 26%, pink 26%, pink 74%, #10D94D 74%, #10D94D)
+    background-image: linear-gradient(to right, #10D94D 26%, #F69AC1 26%, #F69AC1 74%, #10D94D 74%, #10D94D)
 }
 
 .gradient-home {
@@ -43,7 +43,7 @@
 
 @media (min-width: 1024px) {
     .gradient-fasion {
-        background-image: linear-gradient(to right, #FFFFFF 19%, #F69AC1 19%, #F69AC1)
+        background-image: linear-gradient(to right, #FFFFFF 19%, #FFFFFF 19%, #FFFFFF)
     }
 }
 
@@ -74,6 +74,24 @@
 }
 
 #style-3::-webkit-scrollbar-thumb {
+    /* width: 6px; */
+    height: 6px;
+    border-radius: 10px;
+    background-color: #E82223;
+}
+
+#style-4 {
+    scrollbar-width: thin;
+}
+
+#style-4::-webkit-scrollbar {
+    /* width: 6px; */
+    height: 10px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+
+#style-4::-webkit-scrollbar-thumb {
     /* width: 6px; */
     height: 6px;
     border-radius: 10px;
