@@ -566,12 +566,12 @@ video {
   right: 0px;
 }
 
-.top-\[9\%\] {
-  top: 9%;
+.top-\[12\%\] {
+  top: 12%;
 }
 
-.right-\[10\%\] {
-  right: 10%;
+.left-\[60\%\] {
+  left: 60%;
 }
 
 .top-\[2\.25rem\] {
@@ -626,6 +626,10 @@ video {
   right: 0px;
 }
 
+.top-\[10\%\] {
+  top: 10%;
+}
+
 .z-\[2\] {
   z-index: 2;
 }
@@ -666,6 +670,18 @@ video {
   margin: 0px;
 }
 
+.m-14 {
+  margin: 3.5rem;
+}
+
+.m-5 {
+  margin: 1.25rem;
+}
+
+.m-3 {
+  margin: 0.75rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -701,6 +717,10 @@ video {
 
 .-mt-\[5\%\] {
   margin-top: -5%;
+}
+
+.mt-auto {
+  margin-top: auto;
 }
 
 .mb-24 {
@@ -765,6 +785,14 @@ video {
 
 .mt-3 {
   margin-top: 0.75rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
+}
+
+.mt-28 {
+  margin-top: 7rem;
 }
 
 .block {
@@ -852,6 +880,18 @@ video {
   height: fit-content;
 }
 
+.h-0 {
+  height: 0px;
+}
+
+.h-7 {
+  height: 1.75rem;
+}
+
+.h-2 {
+  height: 0.5rem;
+}
+
 .w-full {
   width: 100%;
 }
@@ -860,8 +900,8 @@ video {
   width: 2.5rem;
 }
 
-.w-\[30\%\] {
-  width: 30%;
+.w-\[40\%\] {
+  width: 40%;
 }
 
 .w-fit {
@@ -958,8 +998,12 @@ video {
   max-width: 28rem;
 }
 
-.max-w-\[804px\] {
-  max-width: 804px;
+.max-w-\[50px\] {
+  max-width: 50px;
+}
+
+.max-w-\[85\%\] {
+  max-width: 85%;
 }
 
 .max-w-\[70\%\] {
@@ -1060,6 +1104,10 @@ video {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -1136,6 +1184,10 @@ video {
   gap: 1.6%;
 }
 
+.gap-40 {
+  gap: 10rem;
+}
+
 .gap-3 {
   gap: 0.75rem;
 }
@@ -1162,6 +1214,14 @@ video {
 
 .gap-14 {
   gap: 3.5rem;
+}
+
+.gap-32 {
+  gap: 8rem;
+}
+
+.gap-36 {
+  gap: 9rem;
 }
 
 .gap-x-28 {
@@ -1406,6 +1466,14 @@ video {
   padding: 2rem;
 }
 
+.\!p-4 {
+  padding: 1rem !important;
+}
+
+.p-9 {
+  padding: 2.25rem;
+}
+
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -1570,12 +1638,12 @@ video {
   padding-top: 2.25rem;
 }
 
-.pt-\[7vw\] {
-  padding-top: 7vw;
+.pt-\[20\%\] {
+  padding-top: 20%;
 }
 
-.pb-\[7vw\] {
-  padding-bottom: 7vw;
+.pb-\[20\%\] {
+  padding-bottom: 20%;
 }
 
 .pt-36 {
@@ -1698,6 +1766,10 @@ video {
   padding-top: 5rem;
 }
 
+.pb-28 {
+  padding-bottom: 7rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1791,6 +1863,10 @@ video {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.leading-\[115\%\] {
+  line-height: 115%;
 }
 
 .leading-\[2\.5em\] {
@@ -1909,6 +1985,66 @@ video {
 
 .ease-out {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.\[x\:\10lR\10\FFFD\#zv\FFFD\?\FFFD\7\FFFD\FFFD\FFFDi\FFFD\FFFDQ\FFFD 1\FFFD\FFFDyRx\?\FFFD\FFFD\10\FFFD\FFFDs7\] {
+  x: lR�#zv�?����i��Q�1��yRx?����s7;
+}
+
+.\[x\:I\FFFD\FFFD\FFFDvB\] {
+  x: I���vB;
+}
+
+.\[t\:\FFFDLx\FFFDr4Z\FFFD\1D\FFFDRm\Eh\] {
+  t: �Lx�r4Z��Rmh;
+}
+
+.\[t\:L\FFFD_\FFFD\FFFD-o\FFFD\FFFD\FFFD\11\FFFD\FFFD\FFFD\FFFDJ\FFFD\FFFD\237\FFFD\FFFD\FFFD\] {
+  t: L� ��-o�������J��ȷ���;
+}
+
+.\[-_\:\3\] {
+  -_: ;
+}
+
+.\[-\:\FFFD\] {
+  -: �;
+}
+
+.\[i\:\FFFD\&\FFFD\FFFD\FFFD\FFFD\FFFD\] {
+  i: �&�����;
+}
+
+.\[vL\:\3\FFFD 7\1E\FFFD\>X\18\FFFD\FFFD\FFFDt\~\FFFD\FFFD\7F 2\!\|\0O\] {
+  v-l: �7�>X���t~��2!| O;
+}
+
+.\[p\:u\FFFD\18\FFFD\FFFD\.H\FFFD\>i\1B F\7\FFFDY\FFFD\17W\] {
+  p: u���.H�>iF�Y�W;
+}
+
+.\[t\:\FFFD\FFFDNo\FFFD B\] {
+  t: ��No�B;
+}
+
+.\[o\:\1D\FFFD\F\] {
+  o: �;
+}
+
+.\[r\:\FFFD 7\FFFDq\FFFD\FFFD\FFFD\FFFD\FFFD\FFFD\FFFD\FFFD\FFFD\FFFD\FFFD\7F\*4\FFFD\676wZ\FFFD\FFFD\FFFD 5\1F 0\=\FFFD\] {
+  r: �7�q�����������*4�ٶwZ���50=�;
+}
+
+.\[d\:\FFFD D\FFFD\FFFD\FFFDO\^\>\FFFD\FFFDY\FFFD\FFFD\FFFD\] {
+  d: �D���O^>��Y���;
+}
+
+.\[k\:\FFFD\FFFD\*\10m\FFFDGi\FFFD\/\FFFD\FFFD\] {
+  k: ��*m�Gi�/��;
+}
+
+.\[o\:3\1E\FFFD\FFFD\FFFD\|f\FFFD\FFFDI\FFFD d\=\FFFDq\14\FFFD\FFFD-\FFFD e\FFFD\FFFD 6\10\] {
+  o: 3���|f��I�d=�q��-�e��6;
 }
 
 .gradient {
@@ -2482,8 +2618,8 @@ button {
     position: fixed;
   }
 
-  .lg\:right-\[5\%\] {
-    right: 5%;
+  .lg\:top-\[18\%\] {
+    top: 18%;
   }
 
   .lg\:top-10 {
@@ -2581,9 +2717,9 @@ button {
     line-height: 1;
   }
 
-  .lg\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .lg\:text-xl {
@@ -2604,10 +2740,6 @@ button {
   .lg\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
-  }
-
-  .lg\:leading-\[115\%\] {
-    line-height: 115%;
   }
 }
 
@@ -2658,6 +2790,11 @@ button {
   .xl\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .xl\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 
   .xl\:text-\[3\.2rem\] {
