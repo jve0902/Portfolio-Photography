@@ -566,8 +566,8 @@ video {
   right: 0px;
 }
 
-.top-\[12\%\] {
-  top: 12%;
+.top-\[10\%\] {
+  top: 10%;
 }
 
 .left-\[60\%\] {
@@ -626,10 +626,6 @@ video {
   right: 0px;
 }
 
-.top-\[10\%\] {
-  top: 10%;
-}
-
 .z-\[2\] {
   z-index: 2;
 }
@@ -644,6 +640,18 @@ video {
 
 .z-50 {
   z-index: 50;
+}
+
+.-z-10 {
+  z-index: -10;
+}
+
+.-z-20 {
+  z-index: -20;
+}
+
+.z-\[1\] {
+  z-index: 1;
 }
 
 .col-span-full {
@@ -709,6 +717,10 @@ video {
 
 .ml-auto {
   margin-left: auto;
+}
+
+.mt-28 {
+  margin-top: 7rem;
 }
 
 .mt-8 {
@@ -789,10 +801,6 @@ video {
 
 .mt-16 {
   margin-top: 4rem;
-}
-
-.mt-28 {
-  margin-top: 7rem;
 }
 
 .block {
@@ -961,8 +969,8 @@ video {
   max-width: 1920px;
 }
 
-.max-w-\[200px\] {
-  max-width: 200px;
+.max-w-\[50px\] {
+  max-width: 50px;
 }
 
 .max-w-xs {
@@ -998,10 +1006,6 @@ video {
   max-width: 28rem;
 }
 
-.max-w-\[50px\] {
-  max-width: 50px;
-}
-
 .max-w-\[85\%\] {
   max-width: 85%;
 }
@@ -1022,10 +1026,6 @@ video {
   max-width: 95%;
 }
 
-.max-w-\[53\%\] {
-  max-width: 53%;
-}
-
 .max-w-\[40\%\] {
   max-width: 40%;
 }
@@ -1040,6 +1040,10 @@ video {
 
 .max-w-\[45px\] {
   max-width: 45px;
+}
+
+.max-w-\[200px\] {
+  max-width: 200px;
 }
 
 .max-w-\[500px\] {
@@ -1398,6 +1402,10 @@ video {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
+.bg-none {
+  background-image: none;
+}
+
 .from-green-50 {
   --tw-gradient-from: #f0fdf4;
   --tw-gradient-to: rgb(240 253 244 / 0);
@@ -1472,6 +1480,10 @@ video {
 
 .p-9 {
   padding: 2.25rem;
+}
+
+.p-16 {
+  padding: 4rem;
 }
 
 .py-10 {
@@ -1662,6 +1674,10 @@ video {
   padding-bottom: 1.5rem;
 }
 
+.pt-28 {
+  padding-top: 7rem;
+}
+
 .pl-4 {
   padding-left: 1rem;
 }
@@ -1718,10 +1734,6 @@ video {
   padding-top: 6rem;
 }
 
-.pt-28 {
-  padding-top: 7rem;
-}
-
 .pt-44 {
   padding-top: 11rem;
 }
@@ -1768,6 +1780,14 @@ video {
 
 .pb-28 {
   padding-bottom: 7rem;
+}
+
+.pt-16 {
+  padding-top: 4rem;
+}
+
+.pt-0 {
+  padding-top: 0px;
 }
 
 .text-center {
@@ -1987,84 +2007,19 @@ video {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
-.\[x\:\10lR\10\FFFD\#zv\FFFD\?\FFFD\7\FFFD\FFFD\FFFDi\FFFD\FFFDQ\FFFD 1\FFFD\FFFDyRx\?\FFFD\FFFD\10\FFFD\FFFDs7\] {
-  x: lR�#zv�?����i��Q�1��yRx?����s7;
-}
-
-.\[x\:I\FFFD\FFFD\FFFDvB\] {
-  x: I���vB;
-}
-
-.\[t\:\FFFDLx\FFFDr4Z\FFFD\1D\FFFDRm\Eh\] {
-  t: �Lx�r4Z��Rmh;
-}
-
-.\[t\:L\FFFD_\FFFD\FFFD-o\FFFD\FFFD\FFFD\11\FFFD\FFFD\FFFD\FFFDJ\FFFD\FFFD\237\FFFD\FFFD\FFFD\] {
-  t: L� ��-o�������J��ȷ���;
-}
-
-.\[-_\:\3\] {
-  -_: ;
-}
-
-.\[-\:\FFFD\] {
-  -: �;
-}
-
-.\[i\:\FFFD\&\FFFD\FFFD\FFFD\FFFD\FFFD\] {
-  i: �&�����;
-}
-
-.\[vL\:\3\FFFD 7\1E\FFFD\>X\18\FFFD\FFFD\FFFDt\~\FFFD\FFFD\7F 2\!\|\0O\] {
-  v-l: �7�>X���t~��2!| O;
-}
-
-.\[p\:u\FFFD\18\FFFD\FFFD\.H\FFFD\>i\1B F\7\FFFDY\FFFD\17W\] {
-  p: u���.H�>iF�Y�W;
-}
-
-.\[t\:\FFFD\FFFDNo\FFFD B\] {
-  t: ��No�B;
-}
-
-.\[o\:\1D\FFFD\F\] {
-  o: �;
-}
-
-.\[r\:\FFFD 7\FFFDq\FFFD\FFFD\FFFD\FFFD\FFFD\FFFD\FFFD\FFFD\FFFD\FFFD\FFFD\7F\*4\FFFD\676wZ\FFFD\FFFD\FFFD 5\1F 0\=\FFFD\] {
-  r: �7�q�����������*4�ٶwZ���50=�;
-}
-
-.\[d\:\FFFD D\FFFD\FFFD\FFFDO\^\>\FFFD\FFFDY\FFFD\FFFD\FFFD\] {
-  d: �D���O^>��Y���;
-}
-
-.\[k\:\FFFD\FFFD\*\10m\FFFDGi\FFFD\/\FFFD\FFFD\] {
-  k: ��*m�Gi�/��;
-}
-
-.\[o\:3\1E\FFFD\FFFD\FFFD\|f\FFFD\FFFDI\FFFD d\=\FFFDq\14\FFFD\FFFD-\FFFD e\FFFD\FFFD 6\10\] {
-  o: 3���|f��I�d=�q��-�e��6;
-}
-
-.gradient {
-  background-image: linear-gradient(to right, #10D94D 26%, #F69AC1 26%, #F69AC1 74%, #10D94D 74%, #10D94D)
-}
-
-.gradient-home {
-  background-image: linear-gradient(to right, #FFFFFF 73%, #F69AC1 73%, #F69AC1)
-}
-
-.gradient-about {
-  background-image: linear-gradient(to right, #F69AC1 73%, #E82223 73%, #E82223)
-}
-
-.gradient-fasion {
-  /* background-color: rgb(246 154 193); */
-  background-image: none;
-}
-
 @media (min-width: 1024px) {
+  .gradient {
+    background-image: linear-gradient(to right, #10D94D 26%, #F69AC1 26%, #F69AC1 74%, #10D94D 74%, #10D94D)
+  }
+
+  .gradient-home {
+    background-image: linear-gradient(to right, #FFFFFF 73%, #F69AC1 73%, #F69AC1)
+  }
+
+  .gradient-about {
+    background-image: linear-gradient(to right, #F69AC1 73%, #E82223 73%, #E82223)
+  }
+
   .gradient-fasion {
     background-image: linear-gradient(to right, #FFFFFF 19%, #FFFFFF 19%, #FFFFFF)
   }
@@ -2194,8 +2149,8 @@ button {
 
 .nav-container {
   display: flex;
+  align-items: center;
   /* justify-content: space-between; */
-  align-items: start;
   margin: auto;
   padding-block: 0.5rem;
   width: 95%;
@@ -2203,6 +2158,7 @@ button {
 
 @media (min-width: 1200px) {
   .nav-container {
+    align-items: start;
     /* justify-content: flex-start; */
     max-width: 1920px;
     width: 95%;
@@ -2618,6 +2574,10 @@ button {
     position: fixed;
   }
 
+  .lg\:relative {
+    position: relative;
+  }
+
   .lg\:top-\[18\%\] {
     top: 18%;
   }
@@ -2678,6 +2638,14 @@ button {
     max-width: 81%;
   }
 
+  .lg\:max-w-\[53\%\] {
+    max-width: 53%;
+  }
+
+  .lg\:max-w-\[70\%\] {
+    max-width: 70%;
+  }
+
   .lg\:max-w-\[35\%\] {
     max-width: 35%;
   }
@@ -2690,8 +2658,21 @@ button {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
   .lg\:bg-transparent {
     background-color: transparent;
+  }
+
+  .lg\:bg-darkPink {
+    --tw-bg-opacity: 1;
+    background-color: rgb(246 154 193 / var(--tw-bg-opacity));
+  }
+
+  .lg\:bg-none {
+    background-image: none;
   }
 
   .lg\:py-24 {
@@ -2710,6 +2691,14 @@ button {
 
   .lg\:pl-8 {
     padding-left: 2rem;
+  }
+
+  .lg\:pt-0 {
+    padding-top: 0px;
+  }
+
+  .lg\:pt-28 {
+    padding-top: 7rem;
   }
 
   .lg\:text-7xl {

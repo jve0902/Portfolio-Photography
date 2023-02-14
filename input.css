@@ -24,22 +24,21 @@
 @tailwind components;
 @tailwind utilities;
 
-.gradient {
-    background-image: linear-gradient(to right, #10D94D 26%, #F69AC1 26%, #F69AC1 74%, #10D94D 74%, #10D94D)
+
+@media (min-width: 1024px) {
+    .gradient {
+        background-image: linear-gradient(to right, #10D94D 26%, #F69AC1 26%, #F69AC1 74%, #10D94D 74%, #10D94D)
+    }
+
+    .gradient-home {
+        background-image: linear-gradient(to right, #FFFFFF 73%, #F69AC1 73%, #F69AC1)
+    }
+
+    .gradient-about {
+        background-image: linear-gradient(to right, #F69AC1 73%, #E82223 73%, #E82223)
+    }
 }
 
-.gradient-home {
-    background-image: linear-gradient(to right, #FFFFFF 73%, #F69AC1 73%, #F69AC1)
-}
-
-.gradient-about {
-    background-image: linear-gradient(to right, #F69AC1 73%, #E82223 73%, #E82223)
-}
-
-.gradient-fasion {
-    /* background-color: rgb(246 154 193); */
-    background-image: none;
-}
 
 @media (min-width: 1024px) {
     .gradient-fasion {
@@ -180,8 +179,8 @@ button {
 
 .nav-container {
     display: flex;
+    align-items: center;
     /* justify-content: space-between; */
-    align-items: start;
     margin: auto;
     padding-block: 0.5rem;
     width: 95%;
@@ -190,6 +189,7 @@ button {
 @media (min-width: 1200px) {
 
     .nav-container {
+        align-items: start;
         /* justify-content: flex-start; */
         max-width: 1920px;
         width: 95%;

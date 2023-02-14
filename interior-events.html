@@ -12,16 +12,17 @@
 <body>
     <div class="cursor"></div>
 
-    <div class="lg:hidden">
-        <header class="nav-header font-avenir500 text-2xl  hidden lg:flex justify-between items-center m-auto"
+    <div class="">
+        <header
+            class="fixed lg:relative bg-white nav-header font-avenir500 text-2xl  hidden lg:hidden justify-between items-center m-auto"
             data-header>
             <div class="nav-container">
-                <a href="/index" class="cursor-pointer">
-                    <img class="max-w-[200px]" src="/assets/logo.png" alt="">
+                <a href="index.html" class="cursor-pointer">
+                    <img class="max-w-[50px] lg:max-w-[200px]" src="/assets/logo.png" alt="">
                 </a>
                 <nav class="navbar max-w-xs w-full bg-white h-screen py-10 z-[2] pl-[17%] " data-navbar>
                     <div class="navbar-top">
-                        <a href="/index" class="logo">
+                        <a href="index.html" class="logo">
                             <img class="max-w-[100px]" src="/assets/logo.png" alt="">
                         </a>
                         <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
@@ -30,7 +31,7 @@
                     </div>
                     <ul class="navbar-list pt-6">
                         <li class="navbar-item">
-                            <a href="/index.html.html" class="navbar-link title-sm  font-bold text-accentRed"
+                            <a href="/index.html.html" class="navbar-link title-sm  font-bold hover:text-accentRed"
                                 data-nav-link>HOME</a>
                         </li>
                         <li class="navbar-item">
@@ -79,7 +80,7 @@
             </ul>
         </nav>
     </header>
-    <div class="gradient-fasion">
+    <div class="gradient-fasion p-16">
         <div class="max-w-[97%] m-auto">
             <div class="lg:max-w-[81%] m-auto lg:m-0 lg:ml-auto flex flex-col gap-4 pt-14">
                 <h2 class="font-prisma text-4xl text-darkPink">Brau</h2>
