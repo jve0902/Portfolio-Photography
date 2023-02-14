@@ -80,18 +80,18 @@
     background-color: #E82223;
 }
 
-#style-4 {
+.style-4 {
     scrollbar-width: thin;
 }
 
-#style-4::-webkit-scrollbar {
+.style-4::-webkit-scrollbar {
     /* width: 6px; */
     height: 10px;
     background-color: #F5F5F5;
     border-radius: 10px;
 }
 
-#style-4::-webkit-scrollbar-thumb {
+.style-4::-webkit-scrollbar-thumb {
     /* width: 6px; */
     height: 6px;
     border-radius: 10px;
