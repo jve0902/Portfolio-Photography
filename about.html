@@ -17,7 +17,7 @@
         data-header>
         <div class="nav-container">
             <a href="/index.html" class="cursor-pointer">
-                <img class="max-w-[50px] lg:max-w-[200px]" src="/assets/logo.png" alt="">
+                <img class="max-w-[50px] lg:max-w-[200px] -mb-28" src="/assets/logo.png" alt="">
             </a>
 
             <nav class="navbar max-w-xs w-full bg-white h-screen py-10 z-[2] pl-[17%] " data-navbar>
@@ -45,7 +45,8 @@
 
                     <li class="navbar-item">
                         <a href="/interior-events.html" class="navbar-link title-sm  hover:text-accentRed "
-                            data-nav-link>LIFE SYLE&
+                            data-nav-link>LIFESYLE
+                            &
                             EVENTS</a>
                     </li>
 
@@ -87,10 +88,31 @@
                             new cultures, traditions and everything in colour! Always on the hunt for hidden beauty
                             treasures, vintage gems and artistic projects that will spark my soul!</p>
                     </div>
-
-                    <div>
-                        <img class="w-full" src="/assets/about/videos/1-(1).jpeg" alt="" />
+                    <div class=" relative overflow-hidden lg:max-w-[70%] m-auto lg:m-0 lg:ml-auto">
+                        <div class="slides flex slideshow">
+                            <picture><img class="w-[100%] max-w-[1000px]" src="/assets/about/videos/1-(1).jpeg" alt=""
+                                    name="slide" class="lpImage block w-full">
+                            </picture>
+                            <picture><img class="w-[100%] max-w-[1000px]" src="/assets/about/videos/1-(2).jpeg" alt=""
+                                    name="slide" class="lpImage block w-full">
+                            </picture>
+                            <picture><img class="w-[100%] max-w-[1000px]" src="/assets/about/videos/1-(1).jpg" alt=""
+                                    name="slide" class="lpImage block w-full">
+                            </picture>
+                            <picture><img class="w-[100%] max-w-[1000px]" src="/assets/about/videos/2.png" alt=""
+                                    name="slide" class="lpImage block w-full">
+                            </picture>
+                            <picture><img class="w-[100%] max-w-[1000px]" src="/assets/about/videos/22.jpg" alt=""
+                                    name="slide" class="lpImage block w-full">
+                            </picture>
+                            <picture><img class="w-[100%] max-w-[1000px]" src="/assets/about/videos/3.png" alt=""
+                                    name="slide" class="lpImage block w-full">
+                            </picture>
+                        </div>
                     </div>
+                    <!-- <div>
+                        <img class="w-full" src="/assets/about/videos/1-(1).jpeg" alt="" />
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -240,6 +262,19 @@
     <script src="/navbar.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.3.js"
+        integrity="sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc=" crossorigin="anonymous"></script>
+    <script>
+        $(".slideshow > picture:gt(0)").hide();
+        setInterval(function () {
+            $(".slideshow > picture:first")
+                .hide()
+                .next()
+                .show()
+                .end()
+                .appendTo(".slideshow");
+        }, 1000);
+    </script>
 </body>
 
 </html>

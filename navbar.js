@@ -143,5 +143,6 @@ var cursorAnim = {
 const mediaQuery = window.matchMedia("(min-width: 768px)");
 mediaQuery.matches && cursorAnim.init();
 
+// INSAGRAM FEED
 
 
