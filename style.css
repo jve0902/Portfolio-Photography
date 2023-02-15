@@ -1882,6 +1882,10 @@ video {
   line-height: 115%;
 }
 
+.leading-\[1\.5\%\] {
+  line-height: 1.5%;
+}
+
 .leading-\[2em\] {
   line-height: 2em;
 }
@@ -2758,8 +2762,8 @@ button {
     line-height: 1;
   }
 
-  .xl\:text-\[3\.2rem\] {
-    font-size: 3.2rem;
+  .xl\:text-\[3rem\] {
+    font-size: 3rem;
   }
 }
 
