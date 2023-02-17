@@ -466,3 +466,8 @@ button {
         font-size: 1.25rem;
     }
 }
+
+/* instagram feed */
+#instafeed-container>a>img {
+    max-width: 300px;
+}

@@ -49,7 +49,8 @@
 
 
                     <li class="navbar-item">
-                        <a href="/about.html" class="navbar-link title-sm  hover:text-accentRed" data-nav-link>ABOUT</a>
+                        <a href="/about.html" class="navbar-link title-sm  hover:text-accentRed" data-nav-link>ABOUT
+                            TKW</a>
                     </li>
 
                     <li class="navbar-item">
@@ -72,14 +73,28 @@
     <div class="cursor"></div>
     <div class="bg-darkPink">
         <h1
-            class="  absolute z-[1] top-[10%] lg:top-[18%] left-[60%] w-[40%] font-prisma xl:text-6xl lg:text-4xl leading-[115%] lg:bg-transparent">
-            let's create
+            class="  absolute z-[1] top-[10%] lg:top-[18%] left-[63%] w-[40%] font-prisma xl:text-6xl lg:text-4xl leading-[115%] lg:bg-transparent">
+            let's create <br>
             magic together.
         </h1>
     </div>
     <div class="bg-darkPink -mt-[5%] grid grid-flow-col grid-cols-3 pt-28 lg:pt-20">
         <div class=""><img class="max-w-[85%] pt-[20%]" src="/assets/organised/image-(24).jpg" alt=""></div>
-        <div class=""><img src="/assets/organised/image-(35).jpg" alt=""></div>
+        <!-- <div class=""><img src="/assets/organised/image-(35).jpg" alt=""></div> -->
+        <div class="overflow-hidden">
+            <div class="slides flex slideshow">
+                <picture><img src="/assets/contact/GIF/image-(1).jpg" alt="" name="slide" class="lpImage block w-full">
+                </picture>
+                <picture><img src="/assets/contact/GIF/image-(2).jpg" alt="" name="slide" class="lpImage block w-full">
+                </picture>
+                <picture><img src="/assets/contact/GIF/image-(3).jpg" alt="" name="slide" class="lpImage block w-full">
+                </picture>
+                <picture><img src="/assets/contact/GIF/image-(4).jpg" alt="" name="slide" class="lpImage block w-full">
+                </picture>
+                <picture><img src="/assets/contact/GIF/image-(5).jpg" alt="" name="slide" class="lpImage block w-full">
+                </picture>
+            </div>
+        </div>
         <div class="mt-auto"><img class="max-w-[85%] ml-auto pb-[20%]" src="/assets/organised/image-(59)1.jpg" alt="">
         </div>
     </div>
@@ -89,16 +104,6 @@
             <h2 class="text-2xl lg:text-7xl font-prisma underline mb-24">LET'S WORK TOGETHER</h2>
             <form action="#" method="post">
                 <div class="flex flex-col gap-10 fill">
-                    <div class="subject">
-                        <label for="subject"></label>
-                        <select class="bg-transparent fill placeholder:text-black" placeholder="How can I Help You"
-                            name="subject" id="subject_input" required>
-                            <option disabled hidden selected>How can I Help You</option>
-                            <option>I'd like to start a project</option>
-                            <option>I'd like to ask a question</option>
-                            <option>I'd like to make a proposal</option>
-                        </select>
-                    </div>
                     <div class="flex flex-col sm:flex-row justify-between gap-16">
                         <div class="w-100% border-black border-b fill ">
                             <label for="name"></label>
@@ -138,31 +143,24 @@
                 </div>
             </form>
         </div>
-        <p class="max-w-[70%] m-auto font-avenir500 text-2xl py-16 text-center">As a full-service creative agency, we
-            produce
-            conceptual
-            product images and gifs for social media, web, print
-            and press.
-            <br><br>
-            If you’d like to inquire about our services, collaborate on a project, hire us for a speaking engagement or
-            podcast interview, or just tell us how your week is going (whatever floats your boat), use this form.
-            <br><br>
+        <p class="max-w-[70%] m-auto font-avenir500 text-2xl py-16 text-center">
             Most new clients will be directed to our intake form so you can also skip the initial introduction and go
             straight to the form by clicking <a class="underline text-accentRed" href="/intakeform.html">here</a>.
         </p>
     </div>
     <div class="bg-accentGreen ">
         <div class="max-w-[90%] m-auto">
-            <div class="max-w-fit m-auto pt-10 pb-10 sm:pb-56">
+            <div class="max-w-fit m-auto pt-10 pb-10">
                 <div class="flex gap-10 items-center">
                     <p class=" text-2xl sm:text-6xl font-prisma text-beige">FOLLOW ME ONLINE</p>
                     <img class="w-10 sm:w-auto" src="/assets/about/instagram black.1.png" alt="">
                 </div>
                 <a class="text-2xl sm:text-4xl text-beige" href="# ">@thekimway</a>
-                <div class="flex gap-4 sm:gap-20 pt-9">
-                    <div class="max-w-md"><img src="/assets/about/follow1.png" alt=""></div>
+                <div class="flex gap-4 sm:gap-20 pt-9" id="instafeed-container">
+                    <!-- <div class="max-w-md"><img src="/assets/about/follow1.png" alt=""></div>
                     <div class="max-w-md"><img src="/assets/about/follow2.png" alt=""></div>
-                    <div class="max-w-md"><img src="/assets/about/follow3.png" alt=""></div>
+                    <div class="max-w-md"><img src="/assets/about/follow3.png" alt=""></div> -->
+
                 </div>
             </div>
         </div>
@@ -192,10 +190,30 @@
     <script src="/navbar.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script>
-        AOS.init();
+    <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+    <script type="text/javascript">
+        var userFeed = new Instafeed({
+            get: 'user',
+            target: "instafeed-container",
+            resolution: 'low_resolution',
+            accessToken: 'TOKEN',
+            limit: 3 // Add this option to limit the number of images to 3
+        });
+        userFeed.run();
     </script>
-
+    <script src="https://code.jquery.com/jquery-1.12.3.js"
+        integrity="sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc=" crossorigin="anonymous"></script>
+    <script>
+        $(".slideshow > picture:gt(0)").hide();
+        setInterval(function () {
+            $(".slideshow > picture:first")
+                .hide()
+                .next()
+                .show()
+                .end()
+                .appendTo(".slideshow");
+        }, 1000);
+    </script>
 </body>
 
 </html>
