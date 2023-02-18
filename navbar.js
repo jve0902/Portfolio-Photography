@@ -146,3 +146,12 @@ mediaQuery.matches && cursorAnim.init();
 // INSAGRAM FEED
 
 
+
+// scroll animation
+gsap.registerPlugin(ScrollTrigger);
+gsap.to(".third", {
+    x: 700,
+    duration: 3,
+    scrollTrigger: ".square"
+});
+
