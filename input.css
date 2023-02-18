@@ -26,10 +26,11 @@
 @tailwind utilities;
 
 
+.gradient {
+    background-image: linear-gradient(to right, #10D94D 16%, #F69AC1 16%, #F69AC1 84%, #10D94D 84%, #10D94D)
+}
+
 @media (min-width: 1024px) {
-    .gradient {
-        background-image: linear-gradient(to right, #10D94D 26%, #F69AC1 26%, #F69AC1 74%, #10D94D 74%, #10D94D)
-    }
 
     .gradient-home {
         background-image: linear-gradient(to right, #FFFFFF 73%, #F69AC1 73%, #F69AC1)
@@ -471,6 +472,10 @@ button {
 /* instagram feed */
 #instafeed-container>a>img {
     max-width: 300px;
+}
+
+#instafeed-container>a {
+    margin: auto;
 }
 
 .imgCard {
