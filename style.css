@@ -441,6 +441,8 @@ video {
   font-family: "PRISMA";
 
   src: url('/fonts/Prisma.ttf') format('TrueType');
+
+  src: url('/fonts/Prisma.otf') format('OpenType');
 }
 
 *, ::before, ::after {
@@ -626,16 +628,16 @@ video {
   right: 0px;
 }
 
-.z-\[2\] {
-  z-index: 2;
-}
-
 .z-10 {
   z-index: 10;
 }
 
-.z-\[20\] {
+.z-20 {
   z-index: 20;
+}
+
+.z-\[2\] {
+  z-index: 2;
 }
 
 .z-50 {
@@ -648,10 +650,6 @@ video {
 
 .-z-20 {
   z-index: -20;
-}
-
-.z-20 {
-  z-index: 20;
 }
 
 .col-span-full {
@@ -2464,6 +2462,16 @@ button {
   max-width: 300px;
 }
 
+.imgCard {
+  height: 150px;
+}
+
+@media (min-width: 1024px) {
+  .imgCard {
+    height: 150px;
+  }
+}
+
 .placeholder\:text-black::-moz-placeholder {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -2607,10 +2615,6 @@ button {
   .md\:max-w-\[34\%\] {
     max-width: 34%;
   }
-
-  .md\:pb-0 {
-    padding-bottom: 0px;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -2750,10 +2754,6 @@ button {
 
   .lg\:pl-8 {
     padding-left: 2rem;
-  }
-
-  .lg\:pb-0 {
-    padding-bottom: 0px;
   }
 
   .lg\:text-4xl {

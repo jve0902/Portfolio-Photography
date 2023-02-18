@@ -17,6 +17,7 @@
     @font-face {
         font-family: "PRISMA";
         src: url('/fonts/Prisma.ttf') format('TrueType');
+        src: url('/fonts/Prisma.otf') format('OpenType');
     }
 }
 
@@ -470,4 +471,14 @@ button {
 /* instagram feed */
 #instafeed-container>a>img {
     max-width: 300px;
+}
+
+.imgCard {
+    height: 150px;
+}
+
+@media (min-width: 1024px) {
+    .imgCard {
+        height: 150px;
+    }
 }
