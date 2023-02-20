@@ -769,6 +769,10 @@ video {
   margin-top: 5rem;
 }
 
+.-mb-2 {
+  margin-bottom: -0.5rem;
+}
+
 .mr-6 {
   margin-right: 1.5rem;
 }
@@ -1031,16 +1035,16 @@ video {
   max-width: 100px;
 }
 
+.max-w-\[70\%\] {
+  max-width: 70%;
+}
+
 .max-w-\[1000px\] {
   max-width: 1000px;
 }
 
 .max-w-\[49\%\] {
   max-width: 49%;
-}
-
-.max-w-\[70\%\] {
-  max-width: 70%;
 }
 
 .max-w-\[90\%\] {
@@ -1090,6 +1094,10 @@ video {
 
 .max-w-md {
   max-width: 28rem;
+}
+
+.max-w-full {
+  max-width: 100%;
 }
 
 .flex-1 {
@@ -1827,6 +1835,10 @@ video {
   padding-bottom: 0px;
 }
 
+.pt-\[5\.5rem\] {
+  padding-top: 5.5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1880,11 +1892,6 @@ video {
   font-size: 0.9rem;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
 .text-\[12px\] {
   font-size: 12px;
 }
@@ -1892,6 +1899,11 @@ video {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-5xl {
@@ -1960,10 +1972,6 @@ video {
 
 .tracking-\[0\.5rem\] {
   letter-spacing: 0.5rem;
-}
-
-.-tracking-\[0\.2em\] {
-  letter-spacing: -0.2em;
 }
 
 .tracking-widest {
@@ -2563,6 +2571,11 @@ button {
     font-size: 3rem;
   }
 
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .sm\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
@@ -2580,14 +2593,13 @@ button {
   .sm\:text-\[2\.25rem\] {
     font-size: 2.25rem;
   }
-
-  .sm\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
 }
 
 @media (min-width: 768px) {
+  .md\:max-w-full {
+    max-width: 100%;
+  }
+
   .md\:max-w-\[34\%\] {
     max-width: 34%;
   }
@@ -2608,6 +2620,14 @@ button {
 
   .lg\:left-\[7\.5rem\] {
     left: 7.5rem;
+  }
+
+  .lg\:col-start-1 {
+    grid-column-start: 1;
+  }
+
+  .lg\:col-end-3 {
+    grid-column-end: 3;
   }
 
   .lg\:m-0 {
@@ -2672,10 +2692,6 @@ button {
 
   .lg\:max-w-\[59\%\] {
     max-width: 59%;
-  }
-
-  .lg\:max-w-\[70\%\] {
-    max-width: 70%;
   }
 
   .lg\:max-w-\[35\%\] {
@@ -2747,8 +2763,8 @@ button {
     line-height: 1.75rem;
   }
 
-  .lg\:text-\[3rem\] {
-    font-size: 3rem;
+  .lg\:text-\[3\.2rem\] {
+    font-size: 3.2rem;
   }
 
   .lg\:text-base {
@@ -2759,6 +2775,10 @@ button {
   .lg\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:-tracking-\[0\.2em\] {
+    letter-spacing: -0.2em;
   }
 }
 
@@ -2814,10 +2834,6 @@ button {
   .xl\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
-  }
-
-  .xl\:text-\[3\.5rem\] {
-    font-size: 3.5rem;
   }
 }
 

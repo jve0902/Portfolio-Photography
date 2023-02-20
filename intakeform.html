@@ -10,18 +10,19 @@
 </head>
 
 <body>
-    <header class="bg-darkPink nav-header font-avenir500 text-2xl  hidden lg:flex justify-between items-center m-auto"
+    <header
+        class="fixed lg:relative bg-darkPink   nav-header font-avenir500 text-2xl  hidden lg:flex justify-between items-center m-auto"
         data-header>
-        <div class="nav-container">
+        <div class="nav-container ">
             <a href="index.html" class="cursor-pointer">
-                <img class="max-w-[50px] lg:max-w-[200px]" src="/assets/logo.png" alt="">
+                <img class="max-w-[50px] lg:max-w-[200px] lg:-mb-28" src="/assets/logo.png" alt="">
             </a>
 
-            <nav class="navbar max-w-xs w-full bg-white h-screen py-10 z-[2] pl-[17%] " data-navbar>
+            <nav class="navbar max-w-xs w-full bg-white h-screen py-10 z-20 pl-[17%] " data-navbar>
 
                 <div class="navbar-top">
                     <a href="/index.html" class="logo">
-                        <img class="max-w-[100px]" src="/assets/LOGO.webp" alt="">
+                        <img class="max-w-[100px]" src="/assets/logo.png" alt="">
                     </a>
 
                     <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
@@ -42,13 +43,14 @@
 
                     <li class="navbar-item">
                         <a href="/interior-events.html" class="navbar-link title-sm  hover:text-accentRed "
-                            data-nav-link>INTERIOR &
+                            data-nav-link>LIFESTYLE &
                             EVENTS</a>
                     </li>
 
 
                     <li class="navbar-item">
-                        <a href="/about.html" class="navbar-link title-sm  hover:text-accentRed" data-nav-link>ABOUT</a>
+                        <a href="/about.html" class="navbar-link title-sm  hover:text-accentRed" data-nav-link>ABOUT
+                            TKW</a>
                     </li>
 
                     <li class="navbar-item">
@@ -99,7 +101,7 @@
                 <p class="text-accentRed">We look forward to create magic with you.</p>
                 </p>
             </div>
-            <form>
+            <form action="https://formsubmit.co/ahad4387@gmail.com" method="POST" class="pt-[5.5rem]">
                 <div class="lg:max-w-[50%] lg:ml-auto pt-12 pb-12 text-base lg:text-lg -mt-[8%]">
                     <div class="w-100% fill">
                         <label class="pl-1" for="name_input">First Name</label>
@@ -233,6 +235,10 @@
             </ul>
         </div>
     </footer>
+    <script src="/navbar.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
