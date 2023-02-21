@@ -739,8 +739,8 @@ video {
   margin-top: 2rem;
 }
 
-.ml-\[35\%\] {
-  margin-left: 35%;
+.ml-\[32\%\] {
+  margin-left: 32%;
 }
 
 .ml-\[24\%\] {
@@ -751,8 +751,8 @@ video {
   margin-right: 24%;
 }
 
-.mr-\[35\%\] {
-  margin-right: 35%;
+.mr-\[32\%\] {
+  margin-right: 32%;
 }
 
 .-mt-\[5\%\] {
@@ -847,6 +847,10 @@ video {
   margin-top: 3.5rem;
 }
 
+.mt-24 {
+  margin-top: 6rem;
+}
+
 .block {
   display: block;
 }
@@ -891,12 +895,12 @@ video {
   height: 100%;
 }
 
-.h-36 {
-  height: 9rem;
-}
-
 .h-\[150px\] {
   height: 150px;
+}
+
+.h-36 {
+  height: 9rem;
 }
 
 .h-3 {
@@ -965,12 +969,12 @@ video {
   width: fit-content;
 }
 
-.w-36 {
-  width: 9rem;
-}
-
 .w-\[40\%\] {
   width: 40%;
+}
+
+.w-36 {
+  width: 9rem;
 }
 
 .w-3 {
@@ -1017,8 +1021,8 @@ video {
   min-width: 100%;
 }
 
-.min-w-\[73\%\] {
-  min-width: 73%;
+.min-w-\[80\%\] {
+  min-width: 80%;
 }
 
 .max-w-\[1920px\] {
@@ -1208,10 +1212,6 @@ video {
   gap: 3rem;
 }
 
-.gap-\[8\%\] {
-  gap: 8%;
-}
-
 .gap-6 {
   gap: 1.5rem;
 }
@@ -1236,6 +1236,10 @@ video {
   gap: 4rem;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .gap-\[1\.6\%\] {
   gap: 1.6%;
 }
@@ -1246,10 +1250,6 @@ video {
 
 .gap-3 {
   gap: 0.75rem;
-}
-
-.gap-2 {
-  gap: 0.5rem;
 }
 
 .gap-7 {
@@ -1389,6 +1389,15 @@ video {
   background-color: rgb(16 217 77 / var(--tw-bg-opacity));
 }
 
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
 .bg-pink-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(219 39 119 / var(--tw-bg-opacity));
@@ -1402,15 +1411,6 @@ video {
 .bg-red-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(185 28 28 / var(--tw-bg-opacity));
-}
-
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-transparent {
-  background-color: transparent;
 }
 
 .bg-pink-100 {
@@ -1540,9 +1540,9 @@ video {
   padding-right: 1rem;
 }
 
-.py-24 {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+.py-\[6\%\] {
+  padding-top: 6%;
+  padding-bottom: 6%;
 }
 
 .px-\[8\%\] {
@@ -1583,6 +1583,11 @@ video {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 .py-8 {
@@ -2654,6 +2659,10 @@ button {
 
   .lg\:m-0 {
     margin: 0px;
+  }
+
+  .lg\:m-auto {
+    margin: auto;
   }
 
   .lg\:-mb-28 {
