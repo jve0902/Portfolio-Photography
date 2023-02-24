@@ -1,24 +1,24 @@
 @layer base {
     @font-face {
         font-family: "AVENIR400";
-        src: url('public/fonts/AvenirLTStd-Book.otf') format('OpenType');
+        src: url('/assets/fonts/AvenirLTStd-Book.otf') format('OpenType');
     }
 
     @font-face {
         font-family: "AVENIR500";
-        src: url('public/fonts/AvenirLTStd-Roman.otf') format('OpenType');
+        src: url('/assets/fonts/AvenirLTStd-Roman.otf') format('OpenType');
     }
 
     @font-face {
         font-family: "AVENIR600";
-        src: url('public/fonts/AvenirLTStd-Black.otf') format('OpenType');
+        src: url('/assets/fonts/AvenirLTStd-Black.otf') format('OpenType');
     }
 
     @font-face {
         font-family: "PRISMA";
-        src: url('public/fonts/Prisma.ttf') format('TrueType');
-        src: url('public/fonts/Prisma.otf') format('OpenType');
-        src: url('public/fonts/Prisma.woff2') format('Woff2');
+        src: url('/assets/fonts/Prisma.ttf') format('TrueType');
+        src: url('/assets/fonts/Prisma.otf') format('OpenType');
+        src: url('/assets/fonts/Prisma.woff2') format('Woff2');
     }
 }
 
@@ -321,64 +321,43 @@ button {
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
-
 /**
- * responsive for large than 575px screen
- */
-
-@media (min-width: 575px) {
-
-    /**
-   * REUSED STYLE
-   */
-
-
-    /**
  * responsive for large than 992px screen
  */
 
-    @media (min-width: 992px) {
+@media (min-width: 992px) {
 
-        /**
-   * nav-header
-   */
-
-        /* .nav-open-btn, */
-        .overlay,
-        .navbar-top {
-            display: none;
-        }
-
-        .navbar.active {
-            all: unset;
-            display: block;
-        }
-
-        .navbar-list {
-            display: flex;
-            gap: 8px;
-        }
-
-        .navbar-item:not(:last-child) {
-            border-block-end: none;
-        }
-
-        .navbar-link {
-            padding: 8px 16px;
-        }
-
-        .nav-header .btn {
-            display: block;
-            /* box-shadow: none; */
-        }
-
+    .overlay,
+    .navbar-top,
+    .nav-open-btn {
+        display: none;
     }
 
-    /* responsive for large than 1200px screen */
+    .navbar.active {
+        all: unset;
+        display: block;
+    }
 
+    .navbar-list {
+        display: flex;
+        gap: 8px;
+    }
 
+    .navbar-item:not(:last-child) {
+        border-block-end: none;
+    }
+
+    .navbar-link {
+        padding: 8px 16px;
+    }
+
+    .nav-header .btn {
+        display: block;
+    }
 
 }
+
+/* responsive for large than 1200px screen */
 
 
 
