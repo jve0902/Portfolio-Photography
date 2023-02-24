@@ -443,12 +443,8 @@ video {
   src: url('public/fonts/Prisma.ttf') format('TrueType');
 
   src: url('public/fonts/Prisma.otf') format('OpenType');
-}
 
-@font-face {
-  font-family: "Monoton";
-
-  src: url('public/fonts/Monoton-Regular.ttf') format('TrueType');
+  src: url('public/fonts/Prisma.woff2') format('Woff2');
 }
 
 *, ::before, ::after {
@@ -2535,7 +2531,7 @@ button {
 
 @media (max-width: 1024px) {
   .shadow1 {
-    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.44);
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.20);
   }
 }
 

@@ -18,12 +18,7 @@
         font-family: "PRISMA";
         src: url('public/fonts/Prisma.ttf') format('TrueType');
         src: url('public/fonts/Prisma.otf') format('OpenType');
-    }
-
-    @font-face {
-        font-family: "Monoton";
-        src: url('public/fonts/Monoton-Regular.ttf') format('TrueType');
-
+        src: url('public/fonts/Prisma.woff2') format('Woff2');
     }
 }
 
@@ -497,8 +492,8 @@ button {
 
 @media (max-width: 1024px) {
     .shadow1 {
-        -webkit-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.44);
-        -moz-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.44);
-        box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.44);
+        -webkit-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.20);
+        -moz-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.20);
+        box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.20);
     }
 }
