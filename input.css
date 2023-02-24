@@ -16,6 +16,7 @@
 
     @font-face {
         font-family: "PRISMA";
+        src: url('public/fonts/Prisma.ttf') format('TrueType');
         src: url('public/fonts/Prisma.otf') format('OpenType');
     }
 
