@@ -1,21 +1,25 @@
 @layer base {
     @font-face {
         font-family: "AVENIR400";
+        src: url('/assets/fonts/AvenirLTStd-Book.eot#iefix') format('embedded-opentype');
         src: url('/assets/fonts/AvenirLTStd-Book.otf') format('OpenType');
     }
 
     @font-face {
         font-family: "AVENIR500";
+        src: url('/assets/fonts/AvenirLTStd-Roman.eot#iefix') format('embedded-opentype');
         src: url('/assets/fonts/AvenirLTStd-Roman.otf') format('OpenType');
     }
 
     @font-face {
         font-family: "AVENIR600";
+        src: url('/assets/fonts/AvenirLTStd-Black.eot#iefix') format('embedded-opentype');
         src: url('/assets/fonts/AvenirLTStd-Black.otf') format('OpenType');
     }
 
     @font-face {
         font-family: "PRISMA";
+        src: url('/assets/fonts/Prisma.eot#iefix') format('embedded-opentype');
         src: url('/assets/fonts/Prisma.ttf') format('TrueType');
         src: url('/assets/fonts/Prisma.otf') format('OpenType');
         src: url('/assets/fonts/Prisma.woff2') format('Woff2');
