@@ -422,35 +422,31 @@ video {
 @font-face {
   font-family: "AVENIR400";
 
-  src: url('/fonts/AvenirLTStd-Book.otf') format('OpenType');
+  src: url('public/fonts/AvenirLTStd-Book.otf') format('OpenType');
 }
 
 @font-face {
   font-family: "AVENIR500";
 
-  src: url('/fonts/AvenirLTStd-Roman.otf') format('OpenType');
+  src: url('public/fonts/AvenirLTStd-Roman.otf') format('OpenType');
 }
 
 @font-face {
   font-family: "AVENIR600";
 
-  src: url('/fonts/AvenirLTStd-Black.otf') format('OpenType');
+  src: url('public/fonts/AvenirLTStd-Black.otf') format('OpenType');
 }
 
 @font-face {
   font-family: "PRISMA";
 
-  src: url('/fonts/Prisma.ttf') format('TrueType');
-
-  src: url('/fonts/Prisma.otf') format('OpenType');
-
-  src: url('/fonts/Monoton-Regular.ttf') format('TrueType');
+  src: url('public/fonts/Prisma.otf') format('OpenType');
 }
 
 @font-face {
   font-family: "Monoton";
 
-  src: url('/fonts/Monoton-Regular.ttf') format('TrueType');
+  src: url('public/fonts/Monoton-Regular.ttf') format('TrueType');
 }
 
 *, ::before, ::after {
@@ -2910,5 +2906,9 @@ button {
 
   .\32xl\:pb-0 {
     padding-bottom: 0px;
+  }
+
+  .\32xl\:text-\[3\.2rem\] {
+    font-size: 3.2rem;
   }
 }
