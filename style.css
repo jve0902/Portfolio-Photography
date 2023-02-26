@@ -422,37 +422,28 @@ video {
 @font-face {
   font-family: "AVENIR400";
 
-  src: url('/assets/fonts/AvenirLTStd-Book.eot#iefix') format('embedded-opentype');
-
-  src: url('/assets/fonts/AvenirLTStd-Book.otf') format('OpenType');
+  src: url('/assets/fonts/AvenirLTStd-Book.eot#iefix') format('embedded-opentype'),
+            url('/assets/fonts/AvenirLTStd-Book.otf') format('OpenType');
 }
 
 @font-face {
   font-family: "AVENIR500";
 
-  src: url('/assets/fonts/AvenirLTStd-Roman.eot#iefix') format('embedded-opentype');
-
-  src: url('/assets/fonts/AvenirLTStd-Roman.otf') format('OpenType');
+  src: url('/assets/fonts/AvenirLTStd-Roman.eot#iefix') format('embedded-opentype'),
+            url('/assets/fonts/AvenirLTStd-Roman.otf') format('OpenType');
 }
 
 @font-face {
   font-family: "AVENIR600";
 
-  src: url('/assets/fonts/AvenirLTStd-Black.eot#iefix') format('embedded-opentype');
-
-  src: url('/assets/fonts/AvenirLTStd-Black.otf') format('OpenType');
+  src: url('/assets/fonts/AvenirLTStd-Black.eot#iefix') format('embedded-opentype'),
+            url('/assets/fonts/AvenirLTStd-Black.otf') format('OpenType');
 }
 
 @font-face {
   font-family: "PRISMA";
 
-  src: url('/assets/fonts/Prisma.eot#iefix') format('embedded-opentype');
-
-  src: url('/assets/fonts/Prisma.ttf') format('TrueType');
-
-  src: url('/assets/fonts/Prisma.otf') format('OpenType');
-
-  src: url('/assets/fonts/Prisma.woff2') format('Woff2');
+  src: url('/assets/fonts/Prisma.eot#iefix') format('embedded-opentype'), url('/assets/fonts/Prisma.ttf') format('TrueType'), url('/assets/fonts/Prisma.otf') format('OpenType'), url('/assets/fonts/Prisma.woff2') format('Woff2');
 }
 
 *, ::before, ::after {
@@ -717,6 +708,11 @@ video {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .my-4 {
@@ -2002,6 +1998,10 @@ video {
   line-height: 115%;
 }
 
+.leading-\[1\.5rem\] {
+  line-height: 1.5rem;
+}
+
 .leading-8 {
   line-height: 2rem;
 }
@@ -2664,6 +2664,11 @@ button {
     margin: auto;
   }
 
+  .lg\:my-4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
   .lg\:-mb-28 {
     margin-bottom: -7rem;
   }
@@ -2726,6 +2731,10 @@ button {
 
   .lg\:max-w-\[50\%\] {
     max-width: 50%;
+  }
+
+  .lg\:max-w-\[46\%\] {
+    max-width: 46%;
   }
 
   .lg\:max-w-\[85\%\] {
@@ -2830,6 +2839,10 @@ button {
   .lg\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .lg\:leading-\[2\.5rem\] {
+    line-height: 2.5rem;
   }
 
   .lg\:-tracking-\[0\.2em\] {
