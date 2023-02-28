@@ -148,10 +148,16 @@ mediaQuery.matches && cursorAnim.init();
 
 
 // scroll animation
-gsap.registerPlugin(ScrollTrigger);
-gsap.to(".third", {
-    x: 700,
-    duration: 3,
-    scrollTrigger: ".square"
-});
+const sections = gasp.utils.toArray('.containment .sec')
+
+let scrollTween = gsap.to(sections, {
+    xPercent: -100 * (sections.length - 1),
+    ease: "none",
+    scrollTrigger: {
+        trigger: "containment",
+        pin: true,
+        scrub: 1,
+        end: "+=3000"
+    }
+})
 
