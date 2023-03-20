@@ -24,6 +24,9 @@ module.exports = {
           'to': { 'margin-left': '-100%' },
         },
       },
+      screens: {
+        'postxl': '1350px',
+      },
     },
   },
   plugins: [

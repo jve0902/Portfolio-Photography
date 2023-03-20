@@ -568,6 +568,12 @@ video {
   }
 }
 
+@media (min-width: 1350px) {
+  .container {
+    max-width: 1350px;
+  }
+}
+
 @media (min-width: 1536px) {
   .container {
     max-width: 1536px;
@@ -797,14 +803,6 @@ video {
   margin-right: 32%;
 }
 
-.-mb-2 {
-  margin-bottom: -0.5rem;
-}
-
-.mr-6 {
-  margin-right: 1.5rem;
-}
-
 .-mt-\[10\%\] {
   margin-top: -10%;
 }
@@ -823,6 +821,14 @@ video {
 
 .mt-10 {
   margin-top: 2.5rem;
+}
+
+.-mb-2 {
+  margin-bottom: -0.5rem;
+}
+
+.mr-6 {
+  margin-right: 1.5rem;
 }
 
 .mt-6 {
@@ -1115,6 +1121,10 @@ video {
   max-width: 61%;
 }
 
+.max-w-\[80\%\] {
+  max-width: 80%;
+}
+
 .max-w-\[90\%\] {
   max-width: 90%;
 }
@@ -1278,6 +1288,10 @@ video {
   gap: 1.5rem;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .gap-5 {
   gap: 1.25rem;
 }
@@ -1292,10 +1306,6 @@ video {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-2 {
-  gap: 0.5rem;
 }
 
 .gap-16 {
@@ -1752,6 +1762,14 @@ video {
   padding-bottom: 5rem;
 }
 
+.pr-\[7\%\] {
+  padding-right: 7%;
+}
+
+.pl-\[7\%\] {
+  padding-left: 7%;
+}
+
 .pt-10 {
   padding-top: 2.5rem;
 }
@@ -1762,14 +1780,6 @@ video {
 
 .pt-9 {
   padding-top: 2.25rem;
-}
-
-.pt-8 {
-  padding-top: 2rem;
-}
-
-.pb-6 {
-  padding-bottom: 1.5rem;
 }
 
 .pt-\[8rem\] {
@@ -1802,6 +1812,14 @@ video {
 
 .pt-11 {
   padding-top: 2.75rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
 }
 
 .pt-28 {
@@ -1941,6 +1959,10 @@ video {
   line-height: 2rem;
 }
 
+.text-\[7px\] {
+  font-size: 7px;
+}
+
 .text-\[0\.8rem\] {
   font-size: 0.8rem;
 }
@@ -1948,14 +1970,6 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-.text-\[1\.85rem\] {
-  font-size: 1.85rem;
-}
-
-.text-\[0\.9rem\] {
-  font-size: 0.9rem;
 }
 
 .text-lg {
@@ -1971,6 +1985,14 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-\[1\.85rem\] {
+  font-size: 1.85rem;
+}
+
+.text-\[0\.9rem\] {
+  font-size: 0.9rem;
 }
 
 .text-\[9px\] {
@@ -2655,6 +2677,11 @@ button {
     line-height: 2rem;
   }
 
+  .sm\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
   .sm\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
@@ -2782,12 +2809,12 @@ button {
     max-width: 30%;
   }
 
-  .lg\:max-w-\[85\%\] {
-    max-width: 85%;
-  }
-
   .lg\:max-w-\[50\%\] {
     max-width: 50%;
+  }
+
+  .lg\:max-w-\[85\%\] {
+    max-width: 85%;
   }
 
   .lg\:max-w-\[59\%\] {
@@ -2882,13 +2909,13 @@ button {
     line-height: 2.5rem;
   }
 
-  .lg\:text-xl {
-    font-size: 1.25rem;
+  .lg\:text-lg {
+    font-size: 1.125rem;
     line-height: 1.75rem;
   }
 
-  .lg\:text-lg {
-    font-size: 1.125rem;
+  .lg\:text-xl {
+    font-size: 1.25rem;
     line-height: 1.75rem;
   }
 
@@ -2931,6 +2958,10 @@ button {
     gap: 4rem;
   }
 
+  .xl\:gap-5 {
+    gap: 1.25rem;
+  }
+
   .xl\:gap-10 {
     gap: 2.5rem;
   }
@@ -2952,6 +2983,16 @@ button {
     padding-left: 7%;
   }
 
+  .xl\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .xl\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
   .xl\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -2960,6 +3001,12 @@ button {
   .xl\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
+  }
+}
+
+@media (min-width: 1350px) {
+  .postxl\:text-\[1\.2rem\] {
+    font-size: 1.2rem;
   }
 }
 
@@ -2974,5 +3021,10 @@ button {
 
   .\32xl\:text-\[3\.2rem\] {
     font-size: 3.2rem;
+  }
+
+  .\32xl\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }

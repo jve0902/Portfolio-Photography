@@ -12,163 +12,61 @@
 
 <body>
 
-    <div class="header d-flex flex-column align-items-center">
-        <h1 class="display-6 mt-3 mb-0">lightGallery</h1>
-        <p class="lead mt-2 mb-4">
-          lightGallery is a feature-rich, modular JavaScript gallery plugin for
-          building beautiful image and video galleries for the web and the mobile
-        </p>
-        <a class="btn mb-5 btn-outline-primary" href="https://github.com/sachinchoolur/lightGallery" target="_blank">View on GitHub</a>
-      </div>
-      <div class="gallery-container d-flex align-items-center justify-content-center" id="gallery-container">
-        <a data-lg-size="1400-1400" class="gallery-item" data-src="https://images.unsplash.com/photo-1588093413519-17cec3f64e40?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80" data-sub-html="<div class='lightGallery-captions'> <h4>Photo by - <a href='https://unsplash.com/@entrycube' >Diego Guzmán </a></h4> <p> Location - <a href='https://unsplash.com/s/photos/fushimi-inari-taisha-shrine-senbontorii%2C-68%E7%95%AA%E5%9C%B0-fukakusa-yabunouchicho%2C-fushimi-ward%2C-kyoto%2C-japan'>Fushimi Ward, Kyoto, Japan</a></p></div>">
-          <img class="img-fluid" src="https://images.unsplash.com/photo-1588093413519-17cec3f64e40?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=240&q=80" />
-        </a>
-        <a data-lg-size="1443-1329" class="gallery-item" data-src="https://images.unsplash.com/photo-1563502310703-1ffe473ad66d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1443&q=80" data-sub-html="<div class='lightGallery-captions'><h4>Photo by - <a href='https://unsplash.com/@asoshiation' >Shah </a></h4><p> Location - <a href='https://unsplash.com/s/photos/shinimamiya%2C-osaka%2C-japan'>Shinimamiya, Osaka, Japan</a></p></div>">
-          <img class="img-fluid" src="https://images.unsplash.com/photo-1563502310703-1ffe473ad66d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=240&q=80" />
-        </a>
-        <a data-lg-size="1400-1402" class="gallery-item" data-src="https://images.unsplash.com/photo-1613541444699-39429d990353?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80" data-sub-html="<div class='lightGallery-captions'><h4>Photo by - <a href='https://unsplash.com/@katherine_xx11' >Katherine Gu </a></h4><p> For all those years we were alone and helpless.</p></div>">
-          <img class="img-fluid" src="https://images.unsplash.com/photo-1613541444699-39429d990353?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=240&q=80" />
-        </a>
-      </div>
-    <section style="background-color: lightblue;"></section>
-
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200;400;700&display=swap');
-
-        body {
-            margin: 0;
-            height: 100vh;
-            font-family: 'Poppins';
-        }
-
-        .wrapper {
-            overflow-x: hidden;
-            position: relative;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        svg {
-            position: absolute;
-            top: 12em;
-            left: 10vw;
-            width: 50vw;
-        }
-
-        svg .mask {
-            width: 0;
-        }
-
-        .container {
-            display: flex;
-            width: 300vw;
-        }
-
-        .container .col {
-            display: flex;
-            gap: 3em;
-        }
-
-        .container .col p {
-            font-size: 0.8rem;
-        }
-
-        .container section {
-            width: 100vw;
-            padding: 20vw 10vw;
-        }
-
-        .container section h1 {
-            font-size: 3rem;
-            margin: 0;
-        }
-
-        .container section p {
-            font-size: 1.2rem;
-            width: 50vw;
-        }
-
-        .container section ul {
-            list-style-type: none;
-            display: flex;
-            gap: 3em;
-            width: 100%;
-            height: 300px;
-            padding: 0;
-        }
-
-        .container section ul li {
-            background: white;
-            border-radius: 0.3em;
-            flex-grow: 1;
-        }
-
-        section {
-            height: 100vh;
-        }
-    </style>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
-    <script>
-        const container = document.querySelector(".container");
-        const sections = gsap.utils.toArray(".container img, video");
-        const texts = gsap.utils.toArray(".anim");
-        const mask = document.querySelector(".mask");
-
-        let scrollTween = gsap.to(sections, {
-            xPercent: -100 * (sections.length - 1),
-            ease: "none",
-            scrollTrigger: {
-                trigger: ".container",
-                pin: true,
-                scrub: 1,
-                end: "+=3000",
-                //snap: 1 / (sections.length - 1),
-                markers: true,
-            }
-        });
-
-        console.log(1 / (sections.length - 1))
-
-        //Progress bar animation
-
-        gsap.to(mask, {
-            width: "100%",
-            scrollTrigger: {
-                trigger: ".wrapper",
-                start: "top left",
-                scrub: 1
-            }
-        });
-
-        // whizz around the sections
-        sections.forEach((section) => {
-            // grab the scoped text
-            let text = section.querySelectorAll(".anim");
-
-            // bump out if there's no items to animate
-            if (text.length === 0) return
-
-            // do a little stagger
-            gsap.from(text, {
-                y: -130,
-                opacity: 0,
-                duration: 2,
-                ease: "elastic",
-                stagger: 0.1,
-                scrollTrigger: {
-                    trigger: section,
-                    containerAnimation: scrollTween,
-                    start: "left center",
-                    markers: true
-                }
-            });
-        });
-
-    </script>
+    <div class="bg-darkPink">
+        <div class="grid grid-cols-2 max-w-[80%] m-auto ">
+            
+                <article class="aspect-square font-avenir400 text-justify justify-center flex  flex-col gap-2 xl:gap-5  pr-[7%] xl:justify-center text-[7px] sm:text-xs xl:text-xl postxl:text-[1.2rem] 2xl:text-2xl">
+                    <p class="">
+                    <p>
+                        Hello, I’m Kimberley Denise a Dutchie with a heart full of creativity with over 5 years
+                        experience
+                        in
+                        the field.
+                    </p>
+                    <p> A passionate photographer and art director, I love exploring new cultures, traditions and
+                        everything in colour! Always on the hunt for hidden beauty treasures, vintage gems and artistic
+                        projects that will spark my soul!</p>
+                    <p>
+                        With an degree in Fashion Marketing and Communication I can help your brand with getting those
+                        brand
+                        aesthetics out but also help you with social media setup, scheduling and making your instagram
+                        feed
+                        looking better than ever.
+                    </p>
+                    </p>
+                </article>
+                <div class="">
+                    <img class="w-full" src="/assets/about/videos/1-(2).jpg" alt="">
+                </div>
+                <div class="">
+                    <img class="w-full" src="/assets/about/videos/1-(1).jpg" alt="">
+                </div>
+                <article
+                    class="aspect-square font-avenir400 text-justify justify-center  flex  flex-col gap-2 xl:gap-5  pl-[7%] xl:justify-center text-[7px] sm:text-xs xl:text-lg postxl:text-[1.2rem] 2xl:text-2xl">
+                    <p>
+                    <p>
+                        I can help you enhance your business online designing a tailor made online strategic approach
+                        and
+                        use creative direction to communicate your brand identity.
+                        With my background in styling and pr I can bring your shoot/project to the next level.
+                    </p>
+                    <p>
+                        Based in Dubai, UAE but TKW partners with brands from around the world, and in every industry.
+                        Whether you have a pair of sunglasses to launch, toilet paper to unveil or beverage to uncork,
+                        TheKimWay is excited to start creating magic with you.
+                    </p>
+                    <p>
+                        Do you want to know more? Click the <span class="text-accentGreen underline"><a target="_blank"
+                                href="https://wa.me/+971568953327/?text=Hey, I want to create magic with THEKIMWAY. When are you available?">‘LET’S
+                                SPEAK</a>’</span> button to
+                        instantly connect with me on WhatsApp or
+                        you can email me at <a target="_blank" class="text-accentRed"
+                            href="mailto:hello@thekimway.com?subject=Photography Inquiry&body=Dear Kim, I would like to book an appointment for a shoot">HELLO@thekimway.com</a>
+                    </p>
+                    </p>
+                </article>
+        </div>
+    </div>
 
 
 </body>
