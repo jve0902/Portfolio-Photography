@@ -161,3 +161,8 @@ let scrollTween = gsap.to(sections, {
     }
 })
 
+
+//carousel of gallery
+
+
+
