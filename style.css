@@ -959,12 +959,12 @@ video {
   height: 100vh;
 }
 
-.h-full {
-  height: 100%;
-}
-
 .h-\[150px\] {
   height: 150px;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .h-36 {
@@ -1292,10 +1292,6 @@ video {
   gap: 0.5rem;
 }
 
-.gap-5 {
-  gap: 1.25rem;
-}
-
 .gap-10 {
   gap: 2.5rem;
 }
@@ -1306,6 +1302,10 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .gap-16 {
@@ -1566,10 +1566,6 @@ video {
   padding: 1rem;
 }
 
-.p-10 {
-  padding: 2.5rem;
-}
-
 .p-8 {
   padding: 2rem;
 }
@@ -1580,6 +1576,10 @@ video {
 
 .p-\[16px\] {
   padding: 16px;
+}
+
+.p-10 {
+  padding: 2.5rem;
 }
 
 .p-16 {
@@ -1834,6 +1834,10 @@ video {
   padding-left: 0px;
 }
 
+.pt-\[38px\] {
+  padding-top: 38px;
+}
+
 .pb-7 {
   padding-bottom: 1.75rem;
 }
@@ -1961,10 +1965,6 @@ video {
 
 .text-\[7px\] {
   font-size: 7px;
-}
-
-.text-\[0\.8rem\] {
-  font-size: 0.8rem;
 }
 
 .text-sm {
@@ -2797,12 +2797,12 @@ button {
     max-width: 100%;
   }
 
-  .lg\:max-w-\[49\%\] {
-    max-width: 49%;
+  .lg\:max-w-\[1000px\] {
+    max-width: 1000px;
   }
 
-  .lg\:max-w-\[70\%\] {
-    max-width: 70%;
+  .lg\:max-w-\[49\%\] {
+    max-width: 49%;
   }
 
   .lg\:max-w-\[30\%\] {
@@ -2938,20 +2938,8 @@ button {
     left: 6%;
   }
 
-  .xl\:max-w-\[50\%\] {
-    max-width: 50%;
-  }
-
-  .xl\:flex-row {
-    flex-direction: row;
-  }
-
   .xl\:justify-center {
     justify-content: center;
-  }
-
-  .xl\:justify-between {
-    justify-content: space-between;
   }
 
   .xl\:gap-16 {
@@ -2966,21 +2954,9 @@ button {
     gap: 2.5rem;
   }
 
-  .xl\:p-0 {
-    padding: 0px;
-  }
-
   .xl\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
-  }
-
-  .xl\:pr-\[7\%\] {
-    padding-right: 7%;
-  }
-
-  .xl\:pl-\[7\%\] {
-    padding-left: 7%;
   }
 
   .xl\:text-xl {
@@ -2993,14 +2969,14 @@ button {
     line-height: 1.75rem;
   }
 
-  .xl\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
   .xl\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
+  }
+
+  .xl\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
